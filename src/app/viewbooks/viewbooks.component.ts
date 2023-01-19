@@ -12,7 +12,7 @@ import {Book} from '../book';
 export class ViewbooksComponent implements OnInit {
   books: Array<Book> = [];
 
-  counstructor(private _service: BookstoreService, private _route:Router) { }
+  constructor(private _service: BookstoreService, private _route:Router) { }
 
   ngOnInit():void {
   this.getBooks();
